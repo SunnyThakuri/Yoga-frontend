@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 // components/common/Navbar.tsx
 import React, { useState } from "react";
 
@@ -9,32 +10,32 @@ const Navbar = () => {
       <div className=" py-0 flex items-center justify-between">
         {/* Desktop Navigation */}
         <div className="ml-16 flex items-center gap-10">
-          <a href="/" className="text-white text-xl ">
+          <Link href={"/"} className="text-white text-xl ">
             YOGA
-          </a>
+          </Link>
           <div className="h-16 w-px bg-white"></div>
           <div className="hidden md:flex items-center gap-10">
-            <a href="/shop" className="text-white font-medium">
+            <Link href="/shop" className="text-white font-medium">
               Shop
-            </a>
-            <a href="/retreat" className="text-white font-medium">
+            </Link>
+            <Link href="/retreat" className="text-white font-medium">
               Retreat
-            </a>
-            <a href="/classes" className="text-white font-medium">
+            </Link>
+            <Link href="/classes" className="text-white font-medium">
               Classes
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* Right Side */}
         <div className="hidden md:flex items-center gap-6">
           {/* Phone Number */}
-          <a
+          <Link
             href="tel:+12135550123"
             className="flex items-center gap-2 text-white font-medium"
           >
             <span>+1 (213) 555-0123</span>
-          </a>
+          </Link>
 
           {/* Join Now Button */}
           <button className="bg-white text-black px-6 py-5 ">Join Now</button>
@@ -63,19 +64,22 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-black border-t border-white/30 px-6 py-8 flex flex-col gap-6 text-white">
-          <a href="/shop" className="text-lg font-medium py-2">
+          <Link href="/shop" className="text-lg font-medium py-2">
             Shop
-          </a>
-          <a href="/retreat" className="text-lg font-medium py-2">
+          </Link>
+          <Link href="/retreat" className="text-lg font-medium py-2">
             Retreat
-          </a>
-          <a href="/classes" className="text-lg font-medium py-2">
+          </Link>
+          <Link href="/classes" className="text-lg font-medium py-2">
             Classes
-          </a>
+          </Link>
 
-          <a href="tel:+12135550123" className="text-lg font-medium py-2 pt-6">
+          <Link
+            href="tel:+12135550123"
+            className="text-lg font-medium py-2 pt-6"
+          >
             +1 (213) 555-0123
-          </a>
+          </Link>
 
           <button className="bg-white text-black py-4 rounded-full font-medium mt-4">
             Join Now
