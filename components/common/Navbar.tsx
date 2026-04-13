@@ -6,7 +6,7 @@ import React, { useState } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50  border-b-2 border-b-white">
+    <nav className="lg:absolute fixed top-0 left-0 right-0 z-50  border-b-2 border-b-white">
       <div className=" py-0 flex items-center justify-between">
         {/* Desktop Navigation */}
         <div className="ml-16 flex items-center gap-10">

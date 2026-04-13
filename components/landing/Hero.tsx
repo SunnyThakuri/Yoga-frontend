@@ -41,7 +41,7 @@ const Hero = () => {
           {/* Two Columns */}
           <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left - Testimonial */}
-            <div className="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 w-145">
+            <div className="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 lg:w-145 w-full">
               <div className="flex gap-5">
                 <img
                   src="/img/landing/hero/testimonial.jpg"
@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="hidden lg:block absolute left-1/2 -top-8 -bottom-50 w-px bg-white -translate-x-1/2" />
             {/* Right - About Yoga */}
             <div className="flex-1 flex flex-col">
-              <p className="text-white text-[15px] leading-relaxed flex-1 w-100">
+              <p className="text-white text-[15px] leading-relaxed flex-1 lg:w-100 w-full">
                 We are a supportive community where you can grow and deepen your
                 yoga practice.
               </p>

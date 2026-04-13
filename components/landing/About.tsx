@@ -50,7 +50,7 @@ const About = () => {
             </div>
 
             {/* 97% Satisfaction Badge */}
-            <div className="absolute -bottom-5 -right-9 bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl text-sm text-center">
+            <div className="absolute -bottom-5 -right-2 bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl text-sm text-center">
               97% <br /> Satisfaction
             </div>
           </div>
