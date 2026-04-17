@@ -2,28 +2,40 @@
 import Link from "next/link";
 // components/common/Navbar.tsx
 import React, { useState } from "react";
-
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isTransparent = pathname === "/classes";
+
   return (
-    <nav className="lg:absolute fixed top-0 left-0 right-0 z-50  border-b-2 border-b-white">
+    <nav
+      className={`lg:absolute fixed top-0 left-0 right-0 z-50  border-b-2  ${
+        isTransparent ? "border-b-black" : "border-b-white "
+      }`}
+    >
       <div className=" py-0 flex items-center justify-between">
         {/* Desktop Navigation */}
         <div className="ml-16 flex items-center gap-10">
-          <Link href={"/"} className="text-white text-xl ">
+          <Link
+            href={"/"}
+            className={` text-xl ${
+              isTransparent ? "text-black" : "text-white "
+            }`}
+          >
             YOGA
           </Link>
-          <div className="h-16 w-px bg-white"></div>
-          <div className="hidden md:flex items-center gap-10">
-            <Link href="/shop" className="text-white font-medium">
-              Shop
-            </Link>
-            <Link href="/retreat" className="text-white font-medium">
-              Retreat
-            </Link>
-            <Link href="/classes" className="text-white font-medium">
-              Classes
-            </Link>
+          <div
+            className={`h-16 w-px  ${isTransparent ? "bg-black" : "bg-white "}`}
+          ></div>
+          <div
+            className={`hidden md:flex items-center gap-10 font-medium  ${
+              isTransparent ? "text-black" : "text-white "
+            } `}
+          >
+            <Link href="/shop">Shop</Link>
+            <Link href="/retreat">Retreat</Link>
+            <Link href="/classes">Classes</Link>
           </div>
         </div>
 
@@ -32,13 +44,21 @@ const Navbar = () => {
           {/* Phone Number */}
           <Link
             href="tel:+12135550123"
-            className="flex items-center gap-2 text-white font-medium"
+            className={`flex items-center gap-2 font-medium  ${
+              isTransparent ? "text-black" : "text-white "
+            }`}
           >
             <span>+1 (213) 555-0123</span>
           </Link>
 
           {/* Join Now Button */}
-          <button className="bg-white text-black px-6 py-5 ">Join Now</button>
+          <button
+            className={` ${
+              isTransparent ? "bg-black text-white" : "bg-white text-black"
+            }  px-6 py-5 `}
+          >
+            Join Now
+          </button>
         </div>
         {/* Mobile Menu Button */}
         <button
