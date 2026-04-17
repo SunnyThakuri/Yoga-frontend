@@ -31,7 +31,7 @@ const classes = [
   },
 ];
 
-const Flow = () => {
+const Class = () => {
   return (
     <div className="bg-[#F8F5F0] py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -43,18 +43,6 @@ const Flow = () => {
               <br />
               with our <span className="text-gray-500">Classes</span>
             </h2>
-          </div>
-
-          <div className="mt-8 lg:mt-0 text-left">
-            <p className="text-gray-600 max-w-70">
-              A variety of classes designed to meet you exactly where you are.
-            </p>
-            <a
-              href="#"
-              className="inline-block mt-4 text-sm underline hover:text-gray-800 transition"
-            >
-              Learn More
-            </a>
           </div>
         </div>
 
@@ -123,4 +111,4 @@ const Flow = () => {
   );
 };
 
-export default Flow;
+export default Class;

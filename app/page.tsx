@@ -1,6 +1,6 @@
 import About from "@/components/landing/About";
 import Breadth from "@/components/landing/Breadth";
-import Find from "@/components/landing/Find";
+import Find from "@/components/common/Find";
 import Flow from "@/components/landing/Flow";
 import Hero from "@/components/landing/Hero";
 import Insights from "@/components/landing/insights";
@@ -21,7 +21,6 @@ export default function Home() {
       <WhyYoga />
       <Breadth />
       <Insights />
-      <Find />
     </div>
   );
 }
