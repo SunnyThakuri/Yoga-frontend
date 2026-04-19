@@ -18,7 +18,7 @@ const Breadth = () => {
         {/* Left Side - Heading */}
         <div className="max-w-2xl">
           <h1 className="text-white text-5xl lg:text-7xl font-semibold leading-tight tracking-tight">
-            Breadth deep.
+            Breath deep.
             <br />
             Start practice
           </h1>
