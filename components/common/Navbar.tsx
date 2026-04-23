@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const isTransparent = pathname === "/classes";
+  const isTransparent = pathname === "/classes" || pathname === "/contact-us";
 
   return (
     <nav
@@ -42,6 +42,9 @@ const Navbar = () => {
         {/* Right Side */}
         <div className="hidden md:flex items-center gap-6">
           {/* Phone Number */}
+          <div
+            className={`h-16 w-px  ${isTransparent ? "bg-black" : "bg-white "}`}
+          ></div>
           <Link
             href="tel:+12135550123"
             className={`flex items-center gap-2 font-medium  ${

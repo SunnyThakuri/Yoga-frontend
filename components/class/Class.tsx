@@ -29,6 +29,33 @@ const classes = [
     tags: ["Energy", "Flexibility", "Strength"],
     image: "/img/landing/findflow/3.jpg",
   },
+  {
+    id: "04",
+    title: "Yin Yoga",
+    description: "Dynamic movement for strength and flexibility.",
+    level: "All Levels",
+    duration: "3 Months",
+    tags: ["Energy", "Flexibility", "Strength"],
+    image: "/img/class/4.jpg",
+  },
+  {
+    id: "05",
+    title: "Yin Yoga",
+    description: "Dynamic movement for strength and flexibility.",
+    level: "All Levels",
+    duration: "3 Months",
+    tags: ["Energy", "Flexibility", "Strength"],
+    image: "/img/class/5.jpg",
+  },
+  {
+    id: "06",
+    title: "Yin Yoga",
+    description: "Dynamic movement for strength and flexibility.",
+    level: "All Levels",
+    duration: "3 Months",
+    tags: ["Energy", "Flexibility", "Strength"],
+    image: "/img/class/6.jpg",
+  },
 ];
 
 const Class = () => {

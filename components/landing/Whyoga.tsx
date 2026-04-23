@@ -44,7 +44,7 @@ const WhyYoga = () => {
         </div>
 
         {/* Bottom Description */}
-        <p className="mt-16 text-gray-600 max-w-2xl mx-auto text-[15px] leading-relaxed">
+        <p className="mt-16 text-gray-600 max-w-sm mx-auto text-[15px] leading-relaxed">
           From strength and flexibility to calm and connection, see what regular
           practice can bring to your life.
         </p>
