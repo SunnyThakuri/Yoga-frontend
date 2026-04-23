@@ -6,7 +6,10 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const isTransparent = pathname === "/classes" || pathname === "/contact-us";
+  const isTransparent =
+    pathname === "/classes" ||
+    pathname === "/contact-us" ||
+    pathname === "/retreat";
 
   return (
     <nav
@@ -60,13 +63,15 @@ const Navbar = () => {
               isTransparent ? "bg-black text-white" : "bg-white text-black"
             }  px-6 py-5 `}
           >
-            Join Now
+            <Link href="/contact-us">Join Now</Link>
           </button>
         </div>
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white p-2"
+          className={`md:hidden  p-2  ${
+            isTransparent ? " text-black" : " text-white"
+          }`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
