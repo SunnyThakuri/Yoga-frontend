@@ -1,12 +1,12 @@
 import Overview from "@/components/individualclass/Overview";
-import VinyasaFlow from "@/components/individualclass/VinyasaFlow";
+import IndividualClass from "@/components/individualclass/IndividualClass";
 import WhyYoga from "@/components/landing/Whyoga";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <VinyasaFlow />
+      <IndividualClass />
       <Overview />
       <WhyYoga />
     </div>
