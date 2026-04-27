@@ -1,0 +1,14 @@
+import IndividualRetreat from "@/components/individualretreat/IndividualRetreat";
+import Overview from "@/components/individualretreat/Overview";
+import React from "react";
+
+const page = () => {
+  return (
+    <div>
+      <IndividualRetreat />
+      <Overview />
+    </div>
+  );
+};
+
+export default page;
