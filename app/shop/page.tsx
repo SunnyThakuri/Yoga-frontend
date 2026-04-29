@@ -1,14 +1,14 @@
 import Breadth from "@/components/common/Breadth";
-import Retreat from "@/components/retreat/Retreat";
+import ListofProducts from "@/components/shop/ListofProducts";
 import React from "react";
 
-const YogaRetreat = () => {
+const page = () => {
   return (
     <div>
-      <Retreat />
+      <ListofProducts />
       <Breadth />
     </div>
   );
 };
 
-export default YogaRetreat;
+export default page;
