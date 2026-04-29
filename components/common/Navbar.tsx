@@ -9,7 +9,8 @@ const Navbar = () => {
   const isTransparent =
     pathname === "/classes" ||
     pathname === "/contact-us" ||
-    pathname === "/retreat";
+    pathname === "/retreat" ||
+    pathname === "/shop";
 
   return (
     <nav

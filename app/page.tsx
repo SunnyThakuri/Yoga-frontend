@@ -1,5 +1,5 @@
 import About from "@/components/landing/About";
-import Breadth from "@/components/landing/Breadth";
+import Breadth from "@/components/common/Breadth";
 import Find from "@/components/common/Find";
 import Flow from "@/components/landing/Flow";
 import Hero from "@/components/landing/Hero";
