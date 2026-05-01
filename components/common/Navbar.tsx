@@ -10,7 +10,8 @@ const Navbar = () => {
     pathname === "/classes" ||
     pathname === "/contact-us" ||
     pathname === "/retreat" ||
-    pathname === "/shop";
+    pathname === "/shop" ||
+    pathname === "/product";
 
   return (
     <nav
