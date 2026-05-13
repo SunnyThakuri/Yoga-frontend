@@ -19,7 +19,7 @@ const ContactCards = () => {
     },
     {
       title: "Visit Us",
-      info: "1457 Coral Way, Miami",
+      info: "Online classes",
       icon: <MapPin size={20} className="text-gray-700" />,
       image: "/img/contact/3.jpg",
       alt: "Yoga practitioner in an arm balance pose",
